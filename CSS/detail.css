@@ -1,0 +1,170 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hover-red:hover {
+    color: red;
+}
+
+.border-bot {
+    border-bottom: 1px solid #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Main Content*/
+main {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.content {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.img-layer {
+    width: 50%;
+    text-align: center;
+}
+
+.product-img {
+    width: 60%;
+    max-width: 500px;
+    min-width: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.details-layer {
+    width: 50%;
+}
+
+.size, .quantities-title {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#quantities {
+    border: 1px solid #5887b4 !important;
+    border-radius: 4px !important;
+    background-color: aliceblue !important;
+}
+
+.quantities-layer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.p-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.p-describe {
+    font-size: 16px;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.details-title {
+    border-bottom: 1px solid rgba(22, 24, 35, .06);
+}
+
+.details-content {
+    font-size: 20px;
+}
+
+.p-price {
+    font-size: 26px;
+    margin: 1rem 0;
+    color: red;
+    text-transform: lowercase;
+}
+
+.picker {
+    display: flex;
+}
+
+.pick-box {
+    font-size: 12px;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s;
+    border-radius: 8px;
+}
+
+    .pick-box:hover {
+        border: 1px solid #333;
+        cursor: pointer;
+    }
+
+.purchase-layer {
+    display: flex;
+}
+
+.purchase {
+    text-transform: none;
+    font-size: 18px;
+    border: 1px solid #5887b4;
+    width: 200px;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    margin-left: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 6px;
+}
+
+    .purchase:hover {
+        cursor: pointer;
+        background: #5887b4;
+        color: #fff;
+    }
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, .06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 1024px) {
+    .p-name {
+        margin-top: 10px;
+        text-align: center;
+    }
+}

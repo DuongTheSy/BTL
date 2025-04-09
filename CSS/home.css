@@ -1,0 +1,271 @@
+﻿/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.hover-red:hover {
+    color: red;
+}
+
+main {
+    margin-top: 75px;
+    margin-bottom: 5rem;
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+}
+
+/* Poster section */
+.poster {
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: none;
+}
+
+/* Content sections */
+.content-top,
+.content-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+.reverse-row {
+    flex-direction: row-reverse;
+}
+
+.content-title {
+    min-width: 200px;
+    text-align: center;
+}
+
+.content-tag {
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.image {
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+}
+
+.content-list {
+    min-width: 70%;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(25% - 20px);
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 0.4s;
+}
+
+    .product:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px;
+        transform: translateY(-10px);
+    }
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.product-left {
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+.product-name {
+    font-size: 1rem;
+}
+
+.product-right {
+    width: 30%;
+    text-align: center;
+}
+
+/* Banner section */
+.banner-img {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    height: 420px;
+    overflow: hidden;
+}
+
+.zoom-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.banner-img:hover .zoom-img {
+    transform: scale(1.2);
+}
+
+.banner-section {
+    width: 100%;
+    display: flex;
+}
+
+.banner-name {
+    font-size: 0.9375rem !important;
+    margin-bottom: 0.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em !important;
+    color: #7e7e7e;
+}
+
+.banner-header {
+    max-width: 60% !important;
+    line-height: 45px !important;
+    font-size: 2.125rem !important;
+}
+
+.banner-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 11px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #ffffff;
+    width: 130px;
+    color: black;
+    box-shadow: 0 0.125rem 0.25rem rgba(126, 126, 126, 0.075) !important;
+}
+
+    .banner-btn:hover {
+        background-color: black;
+        color: #ffffff;
+    }
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem !important;
+}
+
+/* Sub-banner section */
+.sub-banner-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 55px 0;
+}
+
+.sub-banner-content {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.sub-banner-img {
+    margin: 30px 0;
+}
+
+.sub-banner-header {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    letter-spacing: 0.8px;
+}
+
+.sub-banner-text {
+    color: #7e7e7e;
+    font-size: 1.25rem;
+}
+
+/* Additional styling */
+.add-to-cart {
+    margin-top: 0.5rem;
+    width: 30%;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .content,
+    .product-row {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-section {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .sub-banner-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-banner-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .sub-banner-content {
+        width: 50%;
+    }
+}
